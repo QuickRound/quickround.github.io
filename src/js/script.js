@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-console.log("Hello there!");
-=======
-console.log("hello world")
->>>>>>> ab8beeccd8fd6283d4d88c46499a3f42e14d7964
+function learnMore() {
+    alert("QuickRound gathers and curates unbiased news from reliable sources, ensuring you stay informed in under 5 minutes!");
+}
+
+console.log("Welcome to QuickRound!");

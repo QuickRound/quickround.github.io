@@ -3,50 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QuickRound is the new medium for news. Get neutral, unbiased and high-quality news from different sources. QuickRound is maintained by the open-source community.">
+    <meta name="description" content="QuickRound is the new medium for news. Get neutral, unbiased, and high-quality news from different sources. QuickRound is maintained by the open-source community.">
     <meta name="author" content="QuickRound">
     <meta name="keywords" content="HTML, template, example, basic structure">
     <title>QuickRound</title>
-    <link rel="stylesheet" href="src/css/styles.css"> <!-- Link to an external CSS file -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css"> <!-- Custom styles -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to QuickRound</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Introduction</a></li>
-                <li><a href="#section2">How it works</a></li>
-                <li><a href="#section3">Let's go!</a></li>
-            </ul>
-        </nav>
+    <!-- Header and Navbar -->
+    <header class="bg-warning text-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand fw-bold text-white" href="#">QuickRound</a>
+                <!-- Toggle button for collapsing navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#section1">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#section2">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#section3">Join Us</a>
+                        </li>
+                    </ul>
+                    <a href="roundup/2025" class="btn btn-primary btn-lg ms-3">Launch</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="section1">
-            <h2>Introduction</h2>
-            <p>News channels do not get to the point, and many people tend to be busy and have lives, it is simply unbearable these days to get neutral and unbiased news in one place. This often leaves many unknowing of the events that occur. How can we fix this you may ask? With QuickRound, you can get a daily roundup, which takes less than 5 minutes to read.</p>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <section id="section1" class="mb-5">
+            <h2 class="text-warning">Introduction</h2>
+            <p>QuickRound simplifies news for the busy individual. In just 5 minutes, get daily roundups of neutral and unbiased news from trusted sources.</p>
         </section>
 
-        <section id="section2">
-            <h2>Section 2</h2>
-            <p>This is the content of section 2.</p>
+        <section id="section2" class="mb-5">
+            <h2 class="text-warning">How It Works</h2>
+            <p>QuickRound is built by the community, for the community. It gathers news highlights from reliable sources and presents them in a concise format to keep you informed.</p>
+            <button class="btn btn-success btn-lg" onclick="learnMore()">Learn More</button>
         </section>
 
         <section id="section3">
-            <h2>Section 3</h2>
-            <p>This is the content of section 3.</p>
+            <h2 class="text-warning">Join Us</h2>
+            <p>Become part of our mission to deliver quality, unbiased news. <a href="src/html/contact.html">Contact us</a> or contribute on <a href="https://github.com/QuickRound/quickround.github.io" target="_blank">GitHub</a>.</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 QuickRound. All rights reserved.</p>
-        <p>
-            <a href="https://github.com/QuickRound" target="_blank">GitHub</a> |
-            <a href="https://github.com/QuickRound/quickround.github.io" target="_blank">Repository</a> |
-            <a href="src/html/contact.html">Contact</a>
-        </p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 QuickRound. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/QuickRound" target="_blank" class="text-warning text-decoration-none">GitHub</a> |
+                <a href="https://github.com/QuickRound/quickround.github.io" target="_blank" class="text-warning text-decoration-none">Repository</a> |
+                <a href="src/html/contact.html" class="text-warning text-decoration-none">Contact</a>
+            </p>
+        </div>
     </footer>
 
-    <script src="src/js/script.js"></script> <!-- Link to an external JavaScript file -->
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/script.js"></script> <!-- Custom JavaScript -->
 </body>
 </html>
