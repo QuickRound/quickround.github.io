@@ -19,15 +19,28 @@
             const month = monthNames[now.getMonth()]; // Get month name (e.g., "jan")
             const day = now.getDate(); // Get day of the month (1-31)
 
-            // Construct the target file name (e.g., "jan5.html")
-            const targetFile = `${month}${day}.html`;
+            // Check if today is January 9
+            if (month === "jan" && day === 9) {
+                // Display a message and redirect to January 10 updates
+                document.body.innerHTML = `
+                    <h1>January 9 had no updates due to website maintenance</h1>
+                    <h5>We will redirect you to January 10's updates shortly...</h5>
+                `;
+                setTimeout(() => {
+                    window.location.href = "jan10.html";
+                }, 3000); // Redirect after 5 seconds
+            } else {
+                // Construct the target file name (e.g., "jan5.html") for other dates
+                const targetFile = `${month}${day}.html`;
 
-            // Redirect to the respective file
-            window.location.href = targetFile;
+                // Redirect to the respective file
+                window.location.href = targetFile;
+            }
         });
     </script>
 </head>
 <body>
-    <h1>Loading...</h1>
+    <h1>Loading your QuickRound...</h1>
+    <h5>Is this taking some time? Check your internet connection or if QuickRound is not down.</h5>
 </body>
 </html>

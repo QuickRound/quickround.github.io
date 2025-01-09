@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="src/css/styles.css"> <!-- Custom styles -->
 </head>
 <body>
+    <!-- Closable Popup -->
+    <div id="maintenancePopup" class="bg-danger text-white text-center py-2 position-relative">
+        <span>🚧 QuickRound will be under maintenance on Saturday, 11th January from 00:00 to 10:00. Please adjust to your timezone. 🚧</span>
+        <button class="btn-close btn-close-white position-absolute end-0 me-3" onclick="closePopup()" aria-label="Close"></button>
+    </div>
+
     <!-- Header and Navbar -->
     <header class="bg-warning text-white">
         <div class="container">
@@ -33,7 +39,7 @@
                             <a class="nav-link text-white" href="#section3">Join Us</a>
                         </li>
                     </ul>
-                    <a href="roundup/2025/maintenance.html" class="btn btn-primary btn-lg ms-3"><strong>Launch</strong></a>
+                    <a href="roundup/2025/hub.html" class="btn btn-primary btn-lg ms-3"><strong>Launch</strong></a>
                 </div>
             </nav>
         </div>
@@ -43,7 +49,7 @@
     <main class="container my-5">
         <section id="section1" class="mb-5">
             <h2 class="text-warning">Introduction</h2>
-            <p>QuickRound simplifies news for the busy individual. In just 5 minutes, get daily roundups of neutral and unbiased news from trusted sources which compare and contrast other sources or from reliable media outlets that have been reviewed.</p>
+            <p>QuickRound simplifies news for the busy individual. In just 5 minutes, get daily roundups of neutral and unbiased news from trusted sources which compare and contrast other sources or from reliable media outlets that have been reviewed. You can think of QuickRound as a wiki for news. <strong>At QuickRound, we encourage you to read further, this is just the best place to start. But, we want our readers to be informed and after all, make what matters most: THEIR OPINION!</strong> Stop the opps and the mass media from lying. Start doing what's right and not easy and self-aggregating news, where QuickRound can assist but it is up to you.</p>
         </section>
 
         <section id="section2" class="mb-5">
@@ -73,5 +79,10 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/script.js"></script> <!-- Custom JavaScript -->
+    <script>
+        function closePopup() {
+            document.getElementById('maintenancePopup').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
