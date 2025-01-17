@@ -3,3 +3,5 @@ function learnMore() {
 }
 
 console.log("Welcome to QuickRound!");
+console.log("404 Errors to be reported as Issues on GitHub");
+console.log("Thanks!")
